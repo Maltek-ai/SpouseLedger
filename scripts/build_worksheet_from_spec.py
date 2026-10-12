@@ -1,5 +1,7 @@
 """Builds the printable worksheet PDF from ledger-spec.json (the single source of truth)."""
 import json, re, sys
+from reportlab import rl_config
+rl_config.invariant = 1  # reproducible output: no timestamps or random IDs, so CI can diff it
 from xml.sax.saxutils import escape
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch
@@ -8,9 +10,13 @@ from reportlab.lib.enums import TA_CENTER
 from reportlab.lib import colors
 from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, PageBreak, Table, TableStyle, HRFlowable, KeepTogether)
 
-SPEC_PATH = sys.argv[1] if len(sys.argv) > 1 else "/home/claude/ledger-spec.json"
-OUT_PATH = sys.argv[2] if len(sys.argv) > 2 else "/home/claude/spouse-ledger-worksheet-v2.1.pdf"
-spec = json.load(open(SPEC_PATH))
+SPEC_PATH = sys.argv[1] if len(sys.argv) > 1 else "spec/ledger-spec.json"
+OUT_PATH = sys.argv[2] if len(sys.argv) > 2 else "public/worksheet/spouse-ledger-worksheet.pdf"
+import hashlib
+SPEC_BYTES = open(SPEC_PATH, "rb").read()
+spec = json.loads(SPEC_BYTES)
+# check:spec reads this back from the PDF to prove the committed worksheet matches the spec.
+SPEC_STAMP = "ledger-spec sha256:" + hashlib.sha256(SPEC_BYTES).hexdigest()
 meta, DIS = spec["meta"], spec["disclaimers"]
 PARTS = {p["id"]: p for p in spec["parts"]}
 
@@ -157,5 +163,5 @@ def footer(c, d):
 
 # drop a trailing PageBreak if the last section left one dangling before the review log
 SimpleDocTemplate(OUT_PATH, pagesize=letter, topMargin=0.7 * inch, bottomMargin=0.8 * inch, leftMargin=0.9 * inch,
-                  rightMargin=0.9 * inch, title="Spouse Ledger Worksheet v" + spec["specVersion"]).build(story, onFirstPage=footer, onLaterPages=footer)
+                  rightMargin=0.9 * inch, title="Spouse Ledger Worksheet v" + spec["specVersion"], subject=SPEC_STAMP).build(story, onFirstPage=footer, onLaterPages=footer)
 print("built", OUT_PATH)

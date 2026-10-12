@@ -37,13 +37,43 @@ See `.env.example` for the full list, each with a comment.
 
 Every push to `main` deploys production. Every other branch gets a preview URL.
 
-## The spec
+## The spec is the product
 
-Ledger content (sections, fields, checklists, disclaimers) comes from
-`spec/ledger-spec.json`, the same file that generates the printable
-worksheet (`scripts/build_worksheet_from_spec.py`). Never hardcode ledger
-text in components. The rules for changing the spec safely will be written
-here when `npm run check:spec` lands.
+`spec/ledger-spec.json` defines every section, field, checklist and disclaimer.
+The app and the printable worksheet are both generated from it, so they can't
+drift apart. Never hardcode ledger text in a component.
+
+| Command | What it does |
+|---|---|
+| `npm run check:spec` | Validates the spec (also runs before every build, on pre-commit, and in CI) |
+| `npm run spec:lock` | Records the spec's keys and hash in `spec/keys.lock.json` |
+| `npm run build:worksheet` | Regenerates `public/worksheet/spouse-ledger-worksheet.pdf` (needs `pip install -r scripts/requirements.txt`) |
+| `npm test` | Spec checker tests, including "removing a key fails" |
+
+### Changing the spec safely
+
+1. **Edit labels, helper text, disclaimers and order freely.**
+2. **Never rename or delete a key.** That includes section ids and block, column,
+   role, contacts field and checklist item keys. To retire a field, add
+   `"deprecated": true`. The app will show it read-only if it holds data and
+   hide it if it's empty.
+3. **Bump `specVersion`** (semver), and add a `## x.y.z (date)` entry to
+   `spec/CHANGELOG.md` listing the section ids that changed.
+4. Run `npm run spec:lock`. It adds new keys and never removes old ones.
+5. Run `npm run build:worksheet` and commit the PDF with the spec.
+6. Run `npm run check:spec`. It fails if:
+   - a locked key is missing
+   - keys are duplicated within a section
+   - a block type is unknown
+   - a `disclaimer.ref` is missing
+   - a "Section N" reference points nowhere
+   - `rowLabels` outnumber `rows`
+   - the spec changed without a version bump or changelog entry
+   - the committed PDF wasn't regenerated from this exact spec (the build
+     script stamps the spec's SHA-256 into the PDF's metadata)
+
+Publishing a GitHub release attaches the worksheet PDF for that spec version
+automatically (`.github/workflows/release.yml`).
 
 `docs/content-structure-v2.1.0.md` is a generated outline of spec v2.1.0, kept
 for reference only.
@@ -52,4 +82,5 @@ for reference only.
 
 Tracked here so they're easy to harden later.
 
-- (none yet)
+- The pre-commit hook checks the working tree, not the staged files, so a
+  partially staged spec change could slip through locally. CI still catches it.

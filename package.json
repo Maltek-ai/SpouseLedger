@@ -4,9 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm run check:spec",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "node --test \"tests/*.test.mjs\"",
+    "check:spec": "node scripts/check-spec.mjs",
+    "spec:lock": "node scripts/spec-lock.mjs",
+    "build:worksheet": "python3 scripts/build_worksheet_from_spec.py spec/ledger-spec.json public/worksheet/spouse-ledger-worksheet.pdf",
+    "prepare": "git config core.hooksPath .githooks 2>/dev/null || true"
   },
   "dependencies": {
     "next": "16.4.0",

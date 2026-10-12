@@ -1,0 +1,4 @@
+#!/bin/sh
+# Installed by `npm install` (the "prepare" script). Blocks commits that break the spec sync rules,
+# including a worksheet PDF that wasn't rebuilt after a spec change.
+exec npm run --silent check:spec

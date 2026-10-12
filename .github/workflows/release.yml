@@ -1,0 +1,26 @@
+name: Attach worksheet to release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  attach:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r scripts/requirements.txt
+      - name: Build worksheet from the released spec
+        run: |
+          v=$(node -p "require('./spec/ledger-spec.json').specVersion")
+          python3 scripts/build_worksheet_from_spec.py spec/ledger-spec.json "spouse-ledger-worksheet-v$v.pdf"
+          echo "PDF=spouse-ledger-worksheet-v$v.pdf" >> "$GITHUB_ENV"
+      - run: gh release upload "${{ github.event.release.tag_name }}" "$PDF" --clobber
+        env:
+          GH_TOKEN: ${{ github.token }}

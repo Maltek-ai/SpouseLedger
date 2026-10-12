@@ -1,5 +1,7 @@
-// Placeholder for the first deploy (Phase 1, step 1). Ledger content will be
-// rendered from spec/ledger-spec.json, never hardcoded here.
+import spec from "../../spec/ledger-spec.json";
+
+// Placeholder for the first deploy. Ledger content will be rendered from
+// spec/ledger-spec.json, never hardcoded here.
 export default function Home() {
   return (
     <div className="flex flex-1 flex-col">
@@ -8,10 +10,19 @@ export default function Home() {
         <p className="text-base opacity-80">
           Private beta. Sign-in is coming soon.
         </p>
+        <a
+          href="/worksheet/spouse-ledger-worksheet.pdf"
+          className="w-fit underline underline-offset-4"
+          download={`spouse-ledger-worksheet-v${spec.specVersion}.pdf`}
+        >
+          Printable worksheet (v{spec.specVersion}, PDF)
+        </a>
       </main>
-      <footer className="px-4 py-4 text-center text-xs opacity-60">
-        Beta: legal notices pending attorney review
-      </footer>
+      {spec.legalReviewStatus.startsWith("DRAFT") && (
+        <footer className="px-4 py-4 text-center text-xs opacity-60">
+          Beta: legal notices pending attorney review
+        </footer>
+      )}
     </div>
   );
 }

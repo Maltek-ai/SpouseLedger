@@ -1,0 +1,1883 @@
+{
+  "specVersion": "2.1.0",
+  "legalReviewStatus": "DRAFT: not yet reviewed by an attorney. Do not sell or distribute until reviewed.",
+  "keyPolicy": "Field keys are permanent. Edit labels and helper text freely; never rename or delete a key (deprecate instead).",
+  "meta": {
+    "title": "SPOUSE LEDGER",
+    "subtitle": "The Complete Business & Household Continuity Worksheet",
+    "subtitle2": "for Entrepreneurial Couples",
+    "blurb": "Everything your spouse would need to keep the business and the household running if something happened to you: the accounts, the bills, the people, the plans, and the things only you know how to do.",
+    "footer": "SPOUSE LEDGER • Confidential • No passwords or full account numbers in this book",
+    "reviewCadenceMonths": 6,
+    "coverFields": [
+      {
+        "key": "owner_name",
+        "label": "Owner Name:"
+      },
+      {
+        "key": "business_names",
+        "label": "Business Name(s):"
+      },
+      {
+        "key": "spouse_name",
+        "label": "Spouse / Successor Name:"
+      },
+      {
+        "key": "date_started",
+        "label": "Date Started:",
+        "helper": "Set a reminder to review every 6 months"
+      }
+    ],
+    "trackerExtras": [
+      "Emergency envelope sealed & stored"
+    ],
+    "reviewLog": {
+      "title": "Annual Review Log",
+      "subtitle": "Review at least twice a year, and after any big change: a new loan, a new baby, a move, a new employee, a policy renewal.",
+      "columns": [
+        "Date reviewed",
+        "What changed",
+        "Reviewed by"
+      ],
+      "rows": 14
+    },
+    "sensitiveEntryWarning": "This looks like a full account number or ID. For safety, write only the last 4 digits here, and keep the full number in your password manager or the sealed envelope."
+  },
+  "disclaimers": {
+    "short": "Not legal, tax, insurance, investment, or financial advice. See the full notice on page 2.",
+    "full": "**Important: please read.** Spouse Ledger is a personal record-keeping and organizing tool. It is not legal, tax, accounting, insurance, investment, or financial advice, and using it does not create an attorney-client, accountant-client, or advisory relationship. Laws, deadlines, and institutional rules vary by state and change over time.\nWriting a wish or instruction in this book does not make it legally binding or give anyone authority over an account, asset, or business. That generally requires properly executed legal documents (such as a will, trust, power of attorney, or beneficiary designation) and the cooperation of the institution involved.\nBefore making decisions about estates, trusts, guardianship, beneficiaries, taxes, insurance claims, investments or retirement accounts, or the sale, transfer, or wind-down of a business, consult licensed professionals: an attorney, a CPA or tax professional, an insurance agent, and, where relevant, a financial advisor or business broker.\nSpouse Ledger and its creators make no guarantee that the information recorded here is accurate, complete, or current, and assume no liability for decisions made in reliance on it. Keep this book secure, and do not record passwords, full account numbers, or recovery phrases in it.",
+    "exit_plan": "**Disclaimer:** This section records your plans and where things are. It is not legal, tax, or financial advice. Before deciding anything about selling, transferring, valuing, or winding down the business, including acting on a buy-sell agreement, key-person insurance, an operating agreement, or a broker's or buyer's offer, consult a licensed business attorney and, where relevant, a CPA and a qualified business broker. Do not sign anything from a prospective buyer or broker until your own attorney has reviewed it.",
+    "estate": "**Disclaimer:** Recording where your estate documents are, and what you want, does not replace having them properly drafted and signed. Wills, trusts, powers of attorney, healthcare directives, and guardian nominations must follow your state's legal requirements to be valid. Wishes written in this book, including funeral wishes and the letter, are generally not legally binding. Ask your estate attorney to confirm that your documents, beneficiary designations, and account titling all agree.",
+    "insurance": "**Disclaimer:** Policy terms, exclusions, and claim deadlines are set by each insurer's contract, not by this worksheet. Beneficiary designations on file with the carrier generally control who is paid, regardless of what a will says. Confirm coverage, premiums, and beneficiaries with your agent or carrier.",
+    "tax": "**Disclaimer:** Tax rules, deadlines, and penalties vary by jurisdiction and change often. Unpaid payroll taxes can create personal liability. Confirm every obligation and due date with your CPA or tax professional, and call them before changing, skipping, or catching up on any filing or payment.",
+    "investments": "**Disclaimer:** This worksheet records where assets are. It does not recommend any investment or action. Account ownership, beneficiary designations, and each custodian's rules determine who can access an asset and what steps are required. Digital assets such as cryptocurrency may be permanently unrecoverable without the keys or recovery phrases. Store those securely, never in this book."
+  },
+  "parts": [
+    {
+      "id": "start",
+      "tag": "START"
+    },
+    {
+      "id": "business",
+      "tag": "PART 1",
+      "title": "The Business"
+    },
+    {
+      "id": "home",
+      "tag": "PART 2: HOME & FAMILY",
+      "title": "Home & Family"
+    },
+    {
+      "id": "first30",
+      "tag": "FIRST 30 DAYS"
+    }
+  ],
+  "sections": [
+    {
+      "id": "start-here",
+      "number": 0,
+      "part": "start",
+      "title": "Start Here",
+      "shortTitle": "Start Here",
+      "subtitle": "Read this page first.",
+      "sharing": "now",
+      "blocks": [
+        {
+          "type": "checklist",
+          "label": "If something has just happened:",
+          "items": [
+            {
+              "key": "breathe_almost_nothing_on_this_list",
+              "text": "Breathe. Almost nothing on this list has to be decided this week. Don't rush any big decision."
+            },
+            {
+              "key": "turn_to_section_14_first_30_days_and",
+              "text": "Turn to **Section 14 (First 30 Days)** and work through it in order."
+            },
+            {
+              "key": "call_the_people_in_section_1_startin",
+              "text": "Call the people in **Section 1**, starting with the attorney and the CPA."
+            },
+            {
+              "key": "check_what_cash_is_available_and_wha",
+              "text": "Check what cash is available and what bills hit in the next 30 days (**Sections 2 and 6**)."
+            },
+            {
+              "key": "do_not_cancel_insurance_licenses_uti",
+              "text": "Do NOT cancel insurance, licenses, utilities, or subscriptions until you've checked with the attorney or CPA."
+            },
+            {
+              "key": "do_not_make_promises_to_employees_cr",
+              "text": "Do NOT make promises to employees, crews, or clients yet."
+            }
+          ],
+          "key": "just_happened"
+        },
+        {
+          "type": "heading",
+          "text": "How this worksheet is organized"
+        },
+        {
+          "type": "info",
+          "text": "**Part 1: The Business** (Sections 1-5): contacts, money, operations, people, and the exit plan.\n**Part 2: Home & Family** (Sections 6-13): household money, insurance, legal documents, taxes, investments, property, family, and digital life.\n**Section 14**: the First 30 Days checklist and a personal letter."
+        },
+        {
+          "type": "heading",
+          "text": "How to fill it in"
+        },
+        {
+          "type": "info",
+          "text": "Fill in what you can. Leave a blank rather than guess, because an honest gap is safer than wrong information. For accounts, write the institution and the **last 4 digits only**. **Never write full account numbers or passwords in this book.** Those belong in your password manager and the sealed emergency envelope (Section 13). Pages that say \"where it lives\" want a location, such as a drawer, a folder, or an app, not the document itself."
+        },
+        {
+          "type": "disclaimer",
+          "ref": "full"
+        }
+      ]
+    },
+    {
+      "id": "who-to-call",
+      "number": 1,
+      "part": "business",
+      "title": "Who to Call",
+      "shortTitle": "Who to Call",
+      "subtitle": "One card per person. Business contacts first, then personal and family.",
+      "sharing": "now",
+      "blocks": [
+        {
+          "type": "contacts",
+          "label": "Business",
+          "fields": [
+            "name",
+            "phone",
+            "email",
+            "notes"
+          ],
+          "roles": [
+            {
+              "key": "cpa_accountant",
+              "label": "CPA / Accountant"
+            },
+            {
+              "key": "business_attorney",
+              "label": "Business Attorney"
+            },
+            {
+              "key": "business_insurance_agent_incl_key_person",
+              "label": "Business Insurance Agent (incl. key-person)"
+            },
+            {
+              "key": "banker_business_banking_rep",
+              "label": "Banker / Business Banking Rep"
+            },
+            {
+              "key": "bookkeeper",
+              "label": "Bookkeeper"
+            },
+            {
+              "key": "payroll_provider",
+              "label": "Payroll Provider"
+            },
+            {
+              "key": "bonding_surety_agent_if_applicable",
+              "label": "Bonding / Surety Agent (if applicable)"
+            },
+            {
+              "key": "key_employee_crew_lead_1",
+              "label": "Key Employee / Crew Lead #1"
+            },
+            {
+              "key": "key_subcontractor_crew_1",
+              "label": "Key Subcontractor / Crew #1"
+            },
+            {
+              "key": "key_subcontractor_crew_2",
+              "label": "Key Subcontractor / Crew #2"
+            },
+            {
+              "key": "key_client_referral_source",
+              "label": "Key Client / Referral Source"
+            },
+            {
+              "key": "trusted_peer_in_the_trade_could_advise_o",
+              "label": "Trusted Peer in the Trade (could advise on running or selling)"
+            }
+          ],
+          "key": "business"
+        },
+        {
+          "type": "pagebreak"
+        },
+        {
+          "type": "contacts",
+          "label": "Personal & Family",
+          "fields": [
+            "name",
+            "phone",
+            "email",
+            "notes"
+          ],
+          "roles": [
+            {
+              "key": "personal_estate_attorney",
+              "label": "Personal / Estate Attorney"
+            },
+            {
+              "key": "financial_advisor_planner",
+              "label": "Financial Advisor / Planner"
+            },
+            {
+              "key": "personal_insurance_agent_life_auto_home",
+              "label": "Personal Insurance Agent (life, auto, home)"
+            },
+            {
+              "key": "mortgage_servicer_lender",
+              "label": "Mortgage Servicer / Lender"
+            },
+            {
+              "key": "primary_care_doctor_adult",
+              "label": "Primary Care Doctor (adult)"
+            },
+            {
+              "key": "family_member_who_can_help_1",
+              "label": "Family Member Who Can Help #1"
+            },
+            {
+              "key": "family_member_who_can_help_2",
+              "label": "Family Member Who Can Help #2"
+            },
+            {
+              "key": "trusted_friend_faith_leader_mentor",
+              "label": "Trusted Friend / Faith Leader / Mentor"
+            },
+            {
+              "key": "neighbor_with_a_spare_key",
+              "label": "Neighbor with a Spare Key"
+            },
+            {
+              "key": "funeral_home_or_arrangements_contact_if",
+              "label": "Funeral Home or Arrangements Contact (if decided)"
+            }
+          ],
+          "key": "personal_family"
+        }
+      ]
+    },
+    {
+      "id": "business-money",
+      "number": 2,
+      "part": "business",
+      "title": "Business Money",
+      "shortTitle": "Business Money",
+      "subtitle": "Identifying info only: last 4 digits, never full numbers or passwords.",
+      "sharing": "now",
+      "blocks": [
+        {
+          "type": "table",
+          "label": "Business Bank Accounts",
+          "helper": null,
+          "rows": 6,
+          "rowHeight": 22,
+          "rowLabels": null,
+          "columns": [
+            {
+              "label": "Bank",
+              "w": 1.5,
+              "key": "bank"
+            },
+            {
+              "label": "Type (operating, payroll, tax, savings)",
+              "w": 1.8,
+              "key": "type_operating_payroll_tax_savin"
+            },
+            {
+              "label": "Last 4",
+              "w": 0.6,
+              "key": "last_4"
+            },
+            {
+              "label": "Who can sign?",
+              "w": 1.3,
+              "key": "who_can_sign"
+            },
+            {
+              "label": "Purpose / notes",
+              "w": 1.8,
+              "key": "purpose_notes"
+            }
+          ],
+          "key": "business_bank_accounts"
+        },
+        {
+          "type": "table",
+          "label": "Business Credit Cards & Lines of Credit",
+          "helper": null,
+          "rows": 5,
+          "rowHeight": 22,
+          "rowLabels": null,
+          "columns": [
+            {
+              "label": "Issuer",
+              "w": 1.5,
+              "key": "issuer"
+            },
+            {
+              "label": "Last 4",
+              "w": 0.6,
+              "key": "last_4"
+            },
+            {
+              "label": "Limit",
+              "w": 0.9,
+              "key": "limit"
+            },
+            {
+              "label": "Who's authorized?",
+              "w": 1.5,
+              "key": "who_s_authorized"
+            },
+            {
+              "label": "What it's used for",
+              "w": 2.4,
+              "key": "what_it_s_used_for"
+            }
+          ],
+          "key": "business_credit_cards_lines_of_credit"
+        },
+        {
+          "type": "table",
+          "label": "Business Loans & Equipment Financing",
+          "helper": null,
+          "rows": 5,
+          "rowHeight": 22,
+          "rowLabels": null,
+          "columns": [
+            {
+              "label": "Lender",
+              "w": 1.3,
+              "key": "lender"
+            },
+            {
+              "label": "What it financed",
+              "w": 1.5,
+              "key": "what_it_financed"
+            },
+            {
+              "label": "Balance (approx.)",
+              "w": 1,
+              "key": "balance_approx"
+            },
+            {
+              "label": "Monthly pmt",
+              "w": 0.9,
+              "key": "monthly_pmt"
+            },
+            {
+              "label": "Due date",
+              "w": 0.8,
+              "key": "due_date"
+            },
+            {
+              "label": "Contact",
+              "w": 1.2,
+              "key": "contact"
+            }
+          ],
+          "key": "business_loans_equipment_financing"
+        },
+        {
+          "type": "pagebreak"
+        },
+        {
+          "type": "table",
+          "label": "Recurring Business Bills",
+          "helper": "Software, insurance, lease/rent, equipment, phones, fuel cards, memberships.",
+          "rows": 12,
+          "rowHeight": 21,
+          "rowLabels": null,
+          "columns": [
+            {
+              "label": "Vendor",
+              "w": 1.5,
+              "key": "vendor"
+            },
+            {
+              "label": "What for",
+              "w": 1.6,
+              "key": "what_for"
+            },
+            {
+              "label": "Amount",
+              "w": 0.8,
+              "key": "amount"
+            },
+            {
+              "label": "Due date",
+              "w": 0.8,
+              "key": "due_date"
+            },
+            {
+              "label": "Paid from / autopay?",
+              "w": 1.7,
+              "key": "paid_from_autopay"
+            }
+          ],
+          "key": "recurring_business_bills"
+        },
+        {
+          "type": "text",
+          "label": "Merchant Services / Payment Processor",
+          "helper": "Square, Stripe, bank card processing: where deposits land",
+          "lines": 1,
+          "key": "merchant_services_payment_processor"
+        },
+        {
+          "type": "text",
+          "label": "Payroll Provider & Schedule",
+          "helper": "Who runs it, which day, which account funds it, who approves",
+          "lines": 2,
+          "key": "payroll_provider_schedule"
+        },
+        {
+          "type": "text",
+          "label": "Money Owed TO the Business (receivables)",
+          "helper": "Where the list lives, who tracks it, insurance carrier payments pending",
+          "lines": 2,
+          "key": "money_owed_to_the_business_receivables"
+        },
+        {
+          "type": "text",
+          "label": "Money the Business Owes OUT (payables)",
+          "helper": "Where the list lives, supplier accounts, open material orders",
+          "lines": 2,
+          "key": "money_the_business_owes_out_payables"
+        },
+        {
+          "type": "text",
+          "label": "Where the Books Are Kept",
+          "helper": "Software name, who has access, bookkeeper contact",
+          "lines": 1,
+          "key": "where_the_books_are_kept"
+        }
+      ]
+    },
+    {
+      "id": "how-the-business-runs",
+      "number": 3,
+      "part": "business",
+      "title": "How the Business Actually Runs",
+      "shortTitle": "How the Business Runs",
+      "subtitle": "The knowledge that keeps it alive, not just the paperwork.",
+      "sharing": "now",
+      "blocks": [
+        {
+          "type": "text",
+          "label": "What This Business Does, Day to Day",
+          "helper": "In plain language, as if explaining to someone with zero context",
+          "lines": 3,
+          "key": "what_this_business_does_day_to_day"
+        },
+        {
+          "type": "text",
+          "label": "Active Jobs / Contracts in Progress",
+          "helper": "Where the current list lives, how to check status, who the customers' main contacts are",
+          "lines": 3,
+          "key": "active_jobs_contracts_in_progress"
+        },
+        {
+          "type": "text",
+          "label": "Licenses / Certifications Required to Operate",
+          "helper": "Who holds them. Critical if it's YOUR personal license keeping the business legal. Renewal dates",
+          "lines": 3,
+          "key": "licenses_certifications_required_to_operate"
+        },
+        {
+          "type": "text",
+          "label": "Bonding / Business Insurance Required to Operate",
+          "helper": null,
+          "lines": 2,
+          "key": "bonding_business_insurance_required_to_operate"
+        },
+        {
+          "type": "pagebreak"
+        },
+        {
+          "type": "text",
+          "label": "Key Vendors / Suppliers Relied On Weekly",
+          "helper": "Name, what they supply, account contact, credit terms",
+          "lines": 3,
+          "key": "key_vendors_suppliers_relied_on_weekly"
+        },
+        {
+          "type": "text",
+          "label": "Equipment / Vehicles / Trailers Owned or Leased",
+          "helper": "What, where it is, lender or lease status, where keys and titles are",
+          "lines": 4,
+          "key": "equipment_vehicles_trailers_owned_or_leased"
+        },
+        {
+          "type": "text",
+          "label": "Physical Locations",
+          "helper": "Shop, storage, office: address, who has keys, lease or owned, landlord contact",
+          "lines": 3,
+          "key": "physical_locations"
+        },
+        {
+          "type": "text",
+          "label": "Seasonal or Timing-Sensitive Facts",
+          "helper": "e.g. \"storm season starts in spring,\" \"insurance renews every March\"",
+          "lines": 2,
+          "key": "seasonal_or_timing_sensitive_facts"
+        },
+        {
+          "type": "text",
+          "label": "Recurring Customer / Insurance-Carrier Relationships",
+          "helper": "Who matters most, what's pending, anything a spouse should never promise",
+          "lines": 2,
+          "key": "recurring_customer_insurance_carrier_relationshi"
+        },
+        {
+          "type": "pagebreak"
+        },
+        {
+          "type": "text",
+          "label": "Business Systems & Accounts: Index Only",
+          "helper": "List WHAT exists (accounting, CRM/job software, email, website/domain host, Google Business, social, phone system, e-sign). Passwords go in the vault, NOT here",
+          "lines": 6,
+          "key": "business_systems_accounts_index_only"
+        },
+        {
+          "type": "text",
+          "label": "Things Only I Know How to Do in the Business",
+          "helper": "Estimating, submitting claims, scheduling crews, ordering materials, running payroll: where each is documented",
+          "lines": 4,
+          "key": "things_only_i_know_how_to_do_in_the_business"
+        }
+      ]
+    },
+    {
+      "id": "people",
+      "number": 4,
+      "part": "business",
+      "title": "The People Who Work Here",
+      "shortTitle": "The People",
+      "subtitle": "Employees, subcontractors, and who could step up.",
+      "sharing": "now",
+      "blocks": [
+        {
+          "type": "table",
+          "label": "Employees (W-2)",
+          "helper": null,
+          "rows": 7,
+          "rowHeight": 22,
+          "rowLabels": null,
+          "columns": [
+            {
+              "label": "Name",
+              "w": 1.3,
+              "key": "name"
+            },
+            {
+              "label": "Role",
+              "w": 1.1,
+              "key": "role"
+            },
+            {
+              "label": "Phone",
+              "w": 1.1,
+              "key": "phone"
+            },
+            {
+              "label": "Pay / schedule",
+              "w": 1.2,
+              "key": "pay_schedule"
+            },
+            {
+              "label": "Notes (reliable? knows the systems?)",
+              "w": 2.2,
+              "key": "notes_reliable_knows_the_systems"
+            }
+          ],
+          "key": "employees_w_2"
+        },
+        {
+          "type": "table",
+          "label": "Subcontractors / Crews",
+          "helper": null,
+          "rows": 6,
+          "rowHeight": 22,
+          "rowLabels": null,
+          "columns": [
+            {
+              "label": "Name / Company",
+              "w": 1.5,
+              "key": "name_company"
+            },
+            {
+              "label": "What they do",
+              "w": 1.4,
+              "key": "what_they_do"
+            },
+            {
+              "label": "Phone",
+              "w": 1.1,
+              "key": "phone"
+            },
+            {
+              "label": "How paid",
+              "w": 1,
+              "key": "how_paid"
+            },
+            {
+              "label": "Notes",
+              "w": 1.9,
+              "key": "notes"
+            }
+          ],
+          "key": "subcontractors_crews"
+        },
+        {
+          "type": "pagebreak"
+        },
+        {
+          "type": "text",
+          "label": "Who Could Run Day-to-Day Operations Temporarily?",
+          "helper": "Name, and have they actually agreed? Who would you trust to advise your spouse?",
+          "lines": 2,
+          "key": "who_could_run_day_to_day_operations_temporarily"
+        },
+        {
+          "type": "text",
+          "label": "Who Has Keys / Access / Admin Rights to What",
+          "helper": "Shop, vehicles, storage, safe, software admin, bank signers, company cards",
+          "lines": 3,
+          "key": "who_has_keys_access_admin_rights_to_what"
+        },
+        {
+          "type": "text",
+          "label": "Who Should Your Spouse NOT Rely On or Be Careful With?",
+          "helper": "Honest notes: anyone who could take advantage, owes money, or isn't dependable",
+          "lines": 2,
+          "key": "who_should_your_spouse_not_rely_on_or_be_careful"
+        },
+        {
+          "type": "text",
+          "label": "Employee / Crew Commitments in Flight",
+          "helper": "Promised raises, bonuses, referral fees, pending commissions, advances",
+          "lines": 2,
+          "key": "employee_crew_commitments_in_flight"
+        }
+      ]
+    },
+    {
+      "id": "business-exit-plan",
+      "number": 5,
+      "part": "business",
+      "title": "Business Exit Plan: If Something Happens",
+      "shortTitle": "Business Exit Plan",
+      "subtitle": null,
+      "sharing": "now",
+      "blocks": [
+        {
+          "type": "disclaimer",
+          "ref": "exit_plan"
+        },
+        {
+          "type": "text",
+          "label": "Business Entity Type & Where Documents Are Kept",
+          "helper": "LLC / S-corp / sole prop; articles, operating agreement, EIN letter, annual report filings",
+          "lines": 2,
+          "key": "business_entity_type_where_documents_are_kept"
+        },
+        {
+          "type": "text",
+          "label": "Buy-Sell Agreement?",
+          "helper": "Exists? Where is it, who holds a copy, who is the other party",
+          "lines": 1,
+          "key": "buy_sell_agreement"
+        },
+        {
+          "type": "text",
+          "label": "Key-Person Life Insurance on Me?",
+          "helper": "Carrier, policy last 4, who is the beneficiary (business or spouse), approximate payout, agent",
+          "lines": 2,
+          "key": "key_person_life_insurance_on_me"
+        },
+        {
+          "type": "text",
+          "label": "Named Successor / Decision-Maker",
+          "helper": "And do they know it? Does the operating agreement say who takes over?",
+          "lines": 1,
+          "key": "named_successor_decision_maker"
+        },
+        {
+          "type": "text",
+          "label": "Is Anything Titled Only in My Name?",
+          "helper": "Business accounts, vehicles, licenses, domains that may need legal steps before my spouse can use them. Ask the attorney",
+          "lines": 2,
+          "key": "is_anything_titled_only_in_my_name"
+        },
+        {
+          "type": "pagebreak"
+        },
+        {
+          "type": "text",
+          "label": "Spouse's Intent (optional, in your own words)",
+          "helper": "Keep running it, sell it, wind it down, not sure yet. It's fine to change your mind",
+          "lines": 3,
+          "key": "spouse_s_intent_optional_in_your_own_words"
+        },
+        {
+          "type": "text",
+          "label": "If Selling",
+          "helper": "Any valuation on file, interested buyers, business broker contact, what I'd consider a fair price range",
+          "lines": 3,
+          "key": "if_selling"
+        },
+        {
+          "type": "text",
+          "label": "If Winding Down",
+          "helper": "Open jobs to finish or hand off, warranties outstanding, equipment to sell, licenses to close",
+          "lines": 3,
+          "key": "if_winding_down"
+        },
+        {
+          "type": "text",
+          "label": "What NOT to Do Immediately",
+          "helper": "Don't cancel insurance, let licenses lapse, sign anything from a buyer, or promise employees anything yet",
+          "lines": 3,
+          "key": "what_not_to_do_immediately"
+        }
+      ]
+    },
+    {
+      "id": "household-money",
+      "number": 6,
+      "part": "home",
+      "title": "Household Money & Bills",
+      "shortTitle": "Household Money & Bills",
+      "subtitle": "Last 4 digits only. Where the money is, what's owed, and what has to be paid every month.",
+      "sharing": "now",
+      "blocks": [
+        {
+          "type": "table",
+          "label": "Personal Bank Accounts",
+          "helper": "Checking, savings, joint, individual, kids' accounts. Mark who is on each one.",
+          "rows": 7,
+          "rowHeight": 22,
+          "rowLabels": null,
+          "columns": [
+            {
+              "label": "Bank",
+              "w": 1.5,
+              "key": "bank"
+            },
+            {
+              "label": "Type",
+              "w": 1.2,
+              "key": "type"
+            },
+            {
+              "label": "Last 4",
+              "w": 0.6,
+              "key": "last_4"
+            },
+            {
+              "label": "In whose name? (joint / mine / hers)",
+              "w": 1.8,
+              "key": "in_whose_name_joint_mine_hers"
+            },
+            {
+              "label": "Purpose",
+              "w": 1.9,
+              "key": "purpose"
+            }
+          ],
+          "key": "personal_bank_accounts"
+        },
+        {
+          "type": "text",
+          "label": "Accounts ONLY in My Name",
+          "helper": "These may be frozen or need legal steps before my spouse can touch them. Ask the bank or attorney now, and consider adding my spouse",
+          "lines": 2,
+          "key": "accounts_only_in_my_name"
+        },
+        {
+          "type": "text",
+          "label": "Emergency Cash: How Much and Where",
+          "helper": "Cash on hand, emergency fund, anything my spouse can reach immediately",
+          "lines": 2,
+          "key": "emergency_cash_how_much_and_where"
+        },
+        {
+          "type": "pagebreak"
+        },
+        {
+          "type": "table",
+          "label": "Home: Mortgage / Rent / HELOC",
+          "helper": null,
+          "rows": 3,
+          "rowHeight": 22,
+          "rowLabels": null,
+          "columns": [
+            {
+              "label": "Lender / Landlord",
+              "w": 1.4,
+              "key": "lender_landlord"
+            },
+            {
+              "label": "Type",
+              "w": 0.8,
+              "key": "type"
+            },
+            {
+              "label": "Loan # (last 4)",
+              "w": 0.8,
+              "key": "loan_last_4"
+            },
+            {
+              "label": "Balance (approx.)",
+              "w": 1,
+              "key": "balance_approx"
+            },
+            {
+              "label": "Monthly pmt",
+              "w": 0.9,
+              "key": "monthly_pmt"
+            },
+            {
+              "label": "Due",
+              "w": 0.5,
+              "key": "due"
+            },
+            {
+              "label": "Taxes & ins. escrowed?",
+              "w": 1.1,
+              "key": "taxes_ins_escrowed"
+            }
+          ],
+          "key": "home_mortgage_rent_heloc"
+        },
+        {
+          "type": "table",
+          "label": "Vehicle Loans & Other Personal Loans (student, personal, family, medical)",
+          "helper": null,
+          "rows": 5,
+          "rowHeight": 22,
+          "rowLabels": null,
+          "columns": [
+            {
+              "label": "Lender",
+              "w": 1.5,
+              "key": "lender"
+            },
+            {
+              "label": "What it's for",
+              "w": 1.6,
+              "key": "what_it_s_for"
+            },
+            {
+              "label": "Last 4",
+              "w": 0.7,
+              "key": "last_4"
+            },
+            {
+              "label": "Balance (approx.)",
+              "w": 1,
+              "key": "balance_approx"
+            },
+            {
+              "label": "Monthly pmt",
+              "w": 1,
+              "key": "monthly_pmt"
+            },
+            {
+              "label": "Due",
+              "w": 0.6,
+              "key": "due"
+            }
+          ],
+          "key": "vehicle_loans_other_personal_loans_student_perso"
+        },
+        {
+          "type": "table",
+          "label": "Personal Credit Cards",
+          "helper": null,
+          "rows": 5,
+          "rowHeight": 22,
+          "rowLabels": null,
+          "columns": [
+            {
+              "label": "Issuer",
+              "w": 1.5,
+              "key": "issuer"
+            },
+            {
+              "label": "Last 4",
+              "w": 0.6,
+              "key": "last_4"
+            },
+            {
+              "label": "Whose name?",
+              "w": 1.1,
+              "key": "whose_name"
+            },
+            {
+              "label": "Autopay?",
+              "w": 0.8,
+              "key": "autopay"
+            },
+            {
+              "label": "Balance (approx.)",
+              "w": 1.1,
+              "key": "balance_approx"
+            },
+            {
+              "label": "Notes",
+              "w": 1.6,
+              "key": "notes"
+            }
+          ],
+          "key": "personal_credit_cards"
+        },
+        {
+          "type": "text",
+          "label": "Personal Guarantees & Co-Signed Debt",
+          "helper": "Anything I personally guaranteed for the business (loans, leases, credit lines, supplier accounts) or co-signed for others. Spouse must know these exist",
+          "lines": 3,
+          "key": "personal_guarantees_co_signed_debt"
+        },
+        {
+          "type": "pagebreak"
+        },
+        {
+          "type": "table",
+          "label": "Monthly Bill Calendar: Home & Personal",
+          "helper": "Utilities, phones, subscriptions, tuition, childcare, HOA. Every bill that has to keep getting paid.",
+          "rows": 13,
+          "rowHeight": 22,
+          "rowLabels": [
+            "Electric",
+            "Water / Sewer",
+            "Gas / Propane",
+            "Trash / Recycling",
+            "Internet / Cable",
+            "Cell Phones",
+            "Home Security / Alarm",
+            "HOA / Dues",
+            "Streaming / Subscriptions",
+            "Childcare / Tuition",
+            "Church / Charity / Gym",
+            "Lawn / Pest / Pool",
+            ""
+          ],
+          "columns": [
+            {
+              "label": "Bill",
+              "w": 1.4,
+              "key": "bill"
+            },
+            {
+              "label": "Company / account #",
+              "w": 1.8,
+              "key": "company_account"
+            },
+            {
+              "label": "Amount",
+              "w": 0.8,
+              "key": "amount"
+            },
+            {
+              "label": "Due",
+              "w": 0.6,
+              "key": "due"
+            },
+            {
+              "label": "Paid from / autopay?",
+              "w": 1.8,
+              "key": "paid_from_autopay"
+            }
+          ],
+          "key": "monthly_bill_calendar_home_personal"
+        },
+        {
+          "type": "pagebreak"
+        },
+        {
+          "type": "text",
+          "label": "How the Bills Actually Get Paid",
+          "helper": "Which account pays what, what's on autopay, what I pay by hand each month and when",
+          "lines": 3,
+          "key": "how_the_bills_actually_get_paid"
+        },
+        {
+          "type": "text",
+          "label": "Household Income Sources",
+          "helper": "Owner draws/distributions (how and when), spouse's income, rental income, anything else. What happens to cash flow if the business pauses?",
+          "lines": 3,
+          "key": "household_income_sources"
+        },
+        {
+          "type": "text",
+          "label": "Money Owed to Us Personally",
+          "helper": "Loans to family or friends, deposits, pending refunds or settlements",
+          "lines": 2,
+          "key": "money_owed_to_us_personally"
+        },
+        {
+          "type": "text",
+          "label": "Where Household Financial Records Live",
+          "helper": "Folder, cabinet, software (Quicken, spreadsheet, budgeting app), bank statements, receipts",
+          "lines": 2,
+          "key": "where_household_financial_records_live"
+        }
+      ]
+    },
+    {
+      "id": "insurance",
+      "number": 7,
+      "part": "home",
+      "title": "Insurance & Protection",
+      "shortTitle": "Insurance & Protection",
+      "subtitle": "Every policy, who covers what, and who gets paid. Policy # last 4 only.",
+      "sharing": "now",
+      "blocks": [
+        {
+          "type": "disclaimer",
+          "ref": "insurance"
+        },
+        {
+          "type": "table",
+          "label": "Policies",
+          "helper": null,
+          "rows": 13,
+          "rowHeight": 20,
+          "rowLabels": [
+            "Life: personal",
+            "Life: key-person (business)",
+            "Disability: personal",
+            "Health",
+            "Dental / Vision",
+            "Auto",
+            "Homeowners / Renters",
+            "Umbrella / Excess liability",
+            "General liability (business)",
+            "Workers' compensation",
+            "Commercial auto / equipment",
+            "Cyber / Professional liability",
+            "Other:"
+          ],
+          "columns": [
+            {
+              "label": "Type",
+              "w": 1.5,
+              "key": "type"
+            },
+            {
+              "label": "Carrier",
+              "w": 1.1,
+              "key": "carrier"
+            },
+            {
+              "label": "Policy # (last 4)",
+              "w": 0.8,
+              "key": "policy_last_4"
+            },
+            {
+              "label": "Coverage / amount",
+              "w": 1,
+              "key": "coverage_amount"
+            },
+            {
+              "label": "Premium & due date",
+              "w": 1.1,
+              "key": "premium_due_date"
+            },
+            {
+              "label": "Agent / phone",
+              "w": 1.2,
+              "key": "agent_phone"
+            }
+          ],
+          "key": "policies"
+        },
+        {
+          "type": "text",
+          "label": "Beneficiaries Named on Each Life Policy & Date Last Verified",
+          "helper": "Out-of-date beneficiaries (old names, no contingent) are a common, costly mistake. Check them every year",
+          "lines": 3,
+          "key": "beneficiaries_named_on_each_life_policy_date_las"
+        },
+        {
+          "type": "text",
+          "label": "Where the Actual Policies Are Kept",
+          "helper": "Drawer, safe, fireproof box, agent's office, online portal",
+          "lines": 1,
+          "key": "where_the_actual_policies_are_kept"
+        },
+        {
+          "type": "text",
+          "label": "Employer / Group Benefits (mine or my spouse's)",
+          "helper": "Group life, disability, health continuation: who to call at the employer or HR",
+          "lines": 2,
+          "key": "employer_group_benefits_mine_or_my_spouse_s"
+        }
+      ]
+    },
+    {
+      "id": "legal-estate",
+      "number": 8,
+      "part": "home",
+      "title": "Legal & Estate Documents",
+      "shortTitle": "Legal & Estate",
+      "subtitle": "Where the originals are, who is named, and who knows.",
+      "sharing": "now",
+      "blocks": [
+        {
+          "type": "disclaimer",
+          "ref": "estate"
+        },
+        {
+          "type": "text",
+          "label": "Will",
+          "helper": "Exists? Date signed, where the ORIGINAL is, who the executor / personal representative is, attorney who drafted it",
+          "lines": 2,
+          "key": "will"
+        },
+        {
+          "type": "text",
+          "label": "Trust(s)",
+          "helper": "Name of trust, trustee, successor trustee, what is held in it, where the documents are",
+          "lines": 2,
+          "key": "trust_s"
+        },
+        {
+          "type": "text",
+          "label": "Durable Power of Attorney (financial)",
+          "helper": "Who is named as agent, where the signed original is",
+          "lines": 1,
+          "key": "durable_power_of_attorney_financial"
+        },
+        {
+          "type": "text",
+          "label": "Healthcare Directive / Medical Power of Attorney / HIPAA Release",
+          "helper": "Who is named, where the copies are, which doctor and hospital have a copy",
+          "lines": 2,
+          "key": "healthcare_directive_medical_power_of_attorney_h"
+        },
+        {
+          "type": "text",
+          "label": "Guardianship for Minor Children",
+          "helper": "Who is named as guardian in the will, do they know, and have they agreed?",
+          "lines": 2,
+          "key": "guardianship_for_minor_children"
+        },
+        {
+          "type": "pagebreak"
+        },
+        {
+          "type": "text",
+          "label": "Prenuptial / Postnuptial Agreements, Divorce Decrees, Support Orders",
+          "helper": "Where they are, anything that affects ownership, support or custody",
+          "lines": 2,
+          "key": "prenuptial_postnuptial_agreements_divorce_decree"
+        },
+        {
+          "type": "text",
+          "label": "Beneficiary Designations Outside the Will",
+          "helper": "Retirement accounts, life insurance, payable-on-death / transfer-on-death accounts: confirm they match your wishes",
+          "lines": 2,
+          "key": "beneficiary_designations_outside_the_will"
+        },
+        {
+          "type": "text",
+          "label": "Funeral, Burial & Memorial Wishes",
+          "helper": "Cemetery plot, prepaid arrangements, preferences, who should speak, what you do and don't want",
+          "lines": 3,
+          "key": "funeral_burial_memorial_wishes"
+        },
+        {
+          "type": "text",
+          "label": "Organ Donation / Special Instructions",
+          "helper": null,
+          "lines": 1,
+          "key": "organ_donation_special_instructions"
+        },
+        {
+          "type": "text",
+          "label": "Pending Legal Matters",
+          "helper": "Lawsuits, liens, claims, disputes, contracts under negotiation, anything with a deadline",
+          "lines": 2,
+          "key": "pending_legal_matters"
+        },
+        {
+          "type": "text",
+          "label": "Safe Deposit Box / Where Original Documents Are Kept",
+          "helper": "Bank and box location, who is authorized, where the key is. Birth certificates, marriage license, passports, SS cards, titles, deeds",
+          "lines": 3,
+          "key": "safe_deposit_box_where_original_documents_are_ke"
+        }
+      ]
+    },
+    {
+      "id": "taxes",
+      "number": 9,
+      "part": "home",
+      "title": "Taxes",
+      "shortTitle": "Taxes",
+      "subtitle": "Deadlines and obligations that don't stop when you do.",
+      "sharing": "now",
+      "blocks": [
+        {
+          "type": "disclaimer",
+          "ref": "tax"
+        },
+        {
+          "type": "text",
+          "label": "Tax Preparer / CPA",
+          "helper": "Name, phone, and whether they prepare both personal and business returns",
+          "lines": 1,
+          "key": "tax_preparer_cpa"
+        },
+        {
+          "type": "text",
+          "label": "Where the Last 7 Years of Returns Are Kept",
+          "helper": "Personal and business, paper and digital",
+          "lines": 1,
+          "key": "where_the_last_7_years_of_returns_are_kept"
+        },
+        {
+          "type": "text",
+          "label": "Quarterly Estimated Tax Payments",
+          "helper": "Federal and state: due dates, usual amounts, which account pays, how it's submitted",
+          "lines": 2,
+          "key": "quarterly_estimated_tax_payments"
+        },
+        {
+          "type": "text",
+          "label": "Payroll Tax Deposits & Filings",
+          "helper": "Who handles them, schedule, which agency accounts exist. Missed payroll taxes can create personal liability, so call the CPA first",
+          "lines": 2,
+          "key": "payroll_tax_deposits_filings"
+        },
+        {
+          "type": "text",
+          "label": "Sales / Use Tax, Business Licenses, Annual Reports, Registered Agent",
+          "helper": "Filing dates, renewal fees, where each is filed",
+          "lines": 2,
+          "key": "sales_use_tax_business_licenses_annual_reports_r"
+        },
+        {
+          "type": "text",
+          "label": "Property Taxes",
+          "helper": "Parcels, amounts, due dates, escrowed or paid directly",
+          "lines": 2,
+          "key": "property_taxes"
+        },
+        {
+          "type": "text",
+          "label": "Open Tax Notices, Audits, or Payment Plans",
+          "helper": "Agency, what it's about, deadlines, who is handling it",
+          "lines": 2,
+          "key": "open_tax_notices_audits_or_payment_plans"
+        }
+      ]
+    },
+    {
+      "id": "investments-retirement",
+      "number": 10,
+      "part": "home",
+      "title": "Investments & Retirement",
+      "shortTitle": "Investments & Retirement",
+      "subtitle": "Everything that has value but isn't a checking account.",
+      "sharing": "now",
+      "blocks": [
+        {
+          "type": "disclaimer",
+          "ref": "investments"
+        },
+        {
+          "type": "table",
+          "label": "Investment & Retirement Accounts",
+          "helper": null,
+          "rows": 7,
+          "rowHeight": 22,
+          "rowLabels": null,
+          "columns": [
+            {
+              "label": "Institution",
+              "w": 1.4,
+              "key": "institution"
+            },
+            {
+              "label": "Account type (401k, IRA, brokerage, HSA, 529...)",
+              "w": 2.2,
+              "key": "account_type_401k_ira_brokerage"
+            },
+            {
+              "label": "Last 4",
+              "w": 0.6,
+              "key": "last_4"
+            },
+            {
+              "label": "In whose name?",
+              "w": 1.2,
+              "key": "in_whose_name"
+            },
+            {
+              "label": "Beneficiary named?",
+              "w": 1.3,
+              "key": "beneficiary_named"
+            }
+          ],
+          "key": "investment_retirement_accounts"
+        },
+        {
+          "type": "text",
+          "label": "Business Retirement Plan (Solo 401k, SEP, SIMPLE)",
+          "helper": "Provider, plan administrator, who can act on it",
+          "lines": 1,
+          "key": "business_retirement_plan_solo_401k_sep_simple"
+        },
+        {
+          "type": "text",
+          "label": "Cryptocurrency / Digital Assets",
+          "helper": "Which exchanges or wallets. Where a hardware wallet is. Where recovery phrases are stored (NOT written here). Without these, the funds are lost",
+          "lines": 2,
+          "key": "cryptocurrency_digital_assets"
+        },
+        {
+          "type": "text",
+          "label": "Pensions, Annuities, Social Security Info",
+          "helper": "Where statements are, who to contact",
+          "lines": 1,
+          "key": "pensions_annuities_social_security_info"
+        },
+        {
+          "type": "text",
+          "label": "Ownership in Other Businesses or Partnerships",
+          "helper": "Other LLCs, real estate partnerships, stock options, partners' contact info",
+          "lines": 2,
+          "key": "ownership_in_other_businesses_or_partnerships"
+        }
+      ]
+    },
+    {
+      "id": "property-valuables",
+      "number": 11,
+      "part": "home",
+      "title": "Property & Valuables",
+      "shortTitle": "Property & Valuables",
+      "subtitle": "What you own, where it is, and how to get into it.",
+      "sharing": "now",
+      "blocks": [
+        {
+          "type": "table",
+          "label": "Real Estate",
+          "helper": null,
+          "rows": 4,
+          "rowHeight": 26,
+          "rowLabels": null,
+          "columns": [
+            {
+              "label": "Address",
+              "w": 1.9,
+              "key": "address"
+            },
+            {
+              "label": "Titled to",
+              "w": 1,
+              "key": "titled_to"
+            },
+            {
+              "label": "Mortgage? (lender)",
+              "w": 1.2,
+              "key": "mortgage_lender"
+            },
+            {
+              "label": "Deed / title location",
+              "w": 1.3,
+              "key": "deed_title_location"
+            },
+            {
+              "label": "Notes (rental? for sale?)",
+              "w": 1.3,
+              "key": "notes_rental_for_sale"
+            }
+          ],
+          "key": "real_estate"
+        },
+        {
+          "type": "table",
+          "label": "Vehicles, Trailers, Boats, Equipment",
+          "helper": null,
+          "rows": 7,
+          "rowHeight": 22,
+          "rowLabels": null,
+          "columns": [
+            {
+              "label": "Description",
+              "w": 1.7,
+              "key": "description"
+            },
+            {
+              "label": "Titled to",
+              "w": 1,
+              "key": "titled_to"
+            },
+            {
+              "label": "Lender / lease",
+              "w": 1.2,
+              "key": "lender_lease"
+            },
+            {
+              "label": "Title location",
+              "w": 1.2,
+              "key": "title_location"
+            },
+            {
+              "label": "Where it's kept / keys",
+              "w": 1.6,
+              "key": "where_it_s_kept_keys"
+            }
+          ],
+          "key": "vehicles_trailers_boats_equipment"
+        },
+        {
+          "type": "pagebreak"
+        },
+        {
+          "type": "text",
+          "label": "Home Safe / Lockbox",
+          "helper": "Where it is, where the combination or key is kept (not the combo itself)",
+          "lines": 1,
+          "key": "home_safe_lockbox"
+        },
+        {
+          "type": "text",
+          "label": "Valuables, Collectibles, Jewelry, Firearms & Where They Are",
+          "helper": "Include any registered or licensed items and who should handle them",
+          "lines": 3,
+          "key": "valuables_collectibles_jewelry_firearms_where_th"
+        },
+        {
+          "type": "text",
+          "label": "Storage Units / Other Locations",
+          "helper": "Address, unit #, who pays, how to access",
+          "lines": 2,
+          "key": "storage_units_other_locations"
+        },
+        {
+          "type": "text",
+          "label": "House Shutoffs & Systems",
+          "helper": "Water main, breaker panel, gas shutoff, HVAC, sprinkler, septic, generator, alarm panel: where each is",
+          "lines": 2,
+          "key": "house_shutoffs_systems"
+        },
+        {
+          "type": "text",
+          "label": "Home Maintenance & Trusted Service People",
+          "helper": "HVAC, plumber, electrician, lawn, handyman, roofer, pest, with phone numbers",
+          "lines": 3,
+          "key": "home_maintenance_trusted_service_people"
+        },
+        {
+          "type": "text",
+          "label": "Warranties, Manuals, Receipts for Big Purchases",
+          "helper": "Where kept",
+          "lines": 1,
+          "key": "warranties_manuals_receipts_for_big_purchases"
+        },
+        {
+          "type": "text",
+          "label": "Intellectual Property & Brand Assets",
+          "helper": "Trademarks, domains (registrar), logos, websites, customer lists, where they live and who owns them",
+          "lines": 2,
+          "key": "intellectual_property_brand_assets"
+        }
+      ]
+    },
+    {
+      "id": "family-dependents",
+      "number": 12,
+      "part": "home",
+      "title": "Family & Dependents",
+      "shortTitle": "Family & Dependents",
+      "subtitle": "The people, routines, and responsibilities that depend on you.",
+      "sharing": "now",
+      "blocks": [
+        {
+          "type": "table",
+          "label": "Children",
+          "helper": null,
+          "rows": 8,
+          "rowHeight": 26,
+          "rowLabels": null,
+          "columns": [
+            {
+              "label": "Name",
+              "w": 1.1,
+              "key": "name"
+            },
+            {
+              "label": "School / grade",
+              "w": 1.2,
+              "key": "school_grade"
+            },
+            {
+              "label": "Doctor / dentist",
+              "w": 1.2,
+              "key": "doctor_dentist"
+            },
+            {
+              "label": "Allergies, meds, special needs",
+              "w": 1.6,
+              "key": "allergies_meds_special_needs"
+            },
+            {
+              "label": "Activities, coaches, pickup",
+              "w": 1.6,
+              "key": "activities_coaches_pickup"
+            }
+          ],
+          "key": "children"
+        },
+        {
+          "type": "pagebreak"
+        },
+        {
+          "type": "text",
+          "label": "Childcare, After-School, and Carpool Arrangements",
+          "helper": "Who, when, how they're paid, who can pick up, who is on the school's authorized-pickup list",
+          "lines": 3,
+          "key": "childcare_after_school_and_carpool_arrangements"
+        },
+        {
+          "type": "text",
+          "label": "Co-Parenting / Custody Arrangements (if any)",
+          "helper": null,
+          "lines": 1,
+          "key": "co_parenting_custody_arrangements_if_any"
+        },
+        {
+          "type": "text",
+          "label": "Aging Parents or Other Dependents I Help Support",
+          "helper": "Who, what they need, who else is involved, payments I make",
+          "lines": 3,
+          "key": "aging_parents_or_other_dependents_i_help_support"
+        },
+        {
+          "type": "text",
+          "label": "Pets",
+          "helper": "Names, vet, medications, microchip info, who could take them",
+          "lines": 2,
+          "key": "pets"
+        },
+        {
+          "type": "text",
+          "label": "My Spouse's Own Situation",
+          "helper": "Their work, income, benefits, health coverage, and anything they'd need to set up (their own accounts, cards, access)",
+          "lines": 2,
+          "key": "my_spouse_s_own_situation"
+        },
+        {
+          "type": "text",
+          "label": "People Who Will Want to Help (and What They're Good At)",
+          "helper": "Family, friends, neighbors, church: who to ask for meals, childcare, rides, paperwork, a listening ear",
+          "lines": 3,
+          "key": "people_who_will_want_to_help_and_what_they_re_go"
+        },
+        {
+          "type": "pagebreak"
+        },
+        {
+          "type": "table",
+          "label": "Tasks ONLY I Handle",
+          "helper": "Everything that quietly gets done because I do it: bills, taxes, renewals, maintenance, school forms, vehicle registrations, filters, annual fees.",
+          "rows": 15,
+          "rowHeight": 24,
+          "rowLabels": null,
+          "columns": [
+            {
+              "label": "Task",
+              "w": 2,
+              "key": "task"
+            },
+            {
+              "label": "How often",
+              "w": 0.9,
+              "key": "how_often"
+            },
+            {
+              "label": "Where / how it's done",
+              "w": 2.2,
+              "key": "where_how_it_s_done"
+            },
+            {
+              "label": "Notes",
+              "w": 1.6,
+              "key": "notes"
+            }
+          ],
+          "key": "tasks_only_i_handle"
+        }
+      ]
+    },
+    {
+      "id": "digital-life",
+      "number": 13,
+      "part": "home",
+      "title": "Digital Life & Secure Access",
+      "shortTitle": "Digital Life & Secure Access",
+      "subtitle": "Write WHERE things are. Never write actual passwords or recovery phrases on these pages.",
+      "sharing": "now",
+      "blocks": [
+        {
+          "type": "info",
+          "text": "**Recommended:** use a password manager with emergency access (1Password or Bitwarden). Set an emergency passcode your spouse knows, write it on paper, and seal it in an envelope stored where your spouse will find it. A phone passcode, an authenticator app, and a primary email can each lock someone out of everything else, so cover them first."
+        },
+        {
+          "type": "text",
+          "label": "Password Manager Used & Emergency Access Set Up?",
+          "helper": null,
+          "lines": 1,
+          "key": "password_manager_used_emergency_access_set_up"
+        },
+        {
+          "type": "text",
+          "label": "Where the Sealed Emergency Envelope Is Kept",
+          "helper": "Should contain the emergency passcode and master-account recovery info",
+          "lines": 1,
+          "key": "where_the_sealed_emergency_envelope_is_kept"
+        },
+        {
+          "type": "text",
+          "label": "Phone & Device Unlock",
+          "helper": "Who knows my phone passcode? Does my spouse have it? Other devices: laptop, tablet, home computer",
+          "lines": 2,
+          "key": "phone_device_unlock"
+        },
+        {
+          "type": "text",
+          "label": "Two-Factor Authentication: Where Codes Come From",
+          "helper": "Authenticator app on my phone, texts to my number, hardware key. Where backup / recovery codes are stored",
+          "lines": 3,
+          "key": "two_factor_authentication_where_codes_come_from"
+        },
+        {
+          "type": "text",
+          "label": "Primary Email Accounts",
+          "helper": "Personal and business. Most resets go through these, so my spouse needs a path in",
+          "lines": 2,
+          "key": "primary_email_accounts"
+        },
+        {
+          "type": "pagebreak"
+        },
+        {
+          "type": "text",
+          "label": "Cell Phone Carrier Account",
+          "helper": "Whose name, account PIN location, can my spouse manage the lines? The number is also used for 2FA texts",
+          "lines": 2,
+          "key": "cell_phone_carrier_account"
+        },
+        {
+          "type": "text",
+          "label": "Cloud Storage, Photos, Documents",
+          "helper": "iCloud / Google / Dropbox: which account, whose, where family photos are backed up",
+          "lines": 2,
+          "key": "cloud_storage_photos_documents"
+        },
+        {
+          "type": "text",
+          "label": "Online Accounts Index (names only)",
+          "helper": "Banks, utilities, government portals (IRS, SSA, state), payroll, merchant services, supplier portals, insurance portals",
+          "lines": 6,
+          "key": "online_accounts_index_names_only"
+        },
+        {
+          "type": "text",
+          "label": "Social Media & Business Pages",
+          "helper": "Facebook business page, Google Business Profile, Instagram, YouTube: who is the admin, who else has access",
+          "lines": 3,
+          "key": "social_media_business_pages"
+        },
+        {
+          "type": "text",
+          "label": "Website, Domain, Business Email Hosting",
+          "helper": "Registrar, host, renewal dates, who has the admin login",
+          "lines": 2,
+          "key": "website_domain_business_email_hosting"
+        },
+        {
+          "type": "text",
+          "label": "Digital Executor / Who Should Handle My Accounts",
+          "helper": "Who is trusted to close, memorialize, or take over accounts",
+          "lines": 1,
+          "key": "digital_executor_who_should_handle_my_accounts"
+        }
+      ]
+    },
+    {
+      "id": "first-30-days",
+      "number": 14,
+      "part": "first30",
+      "title": "First 30 Days Checklist",
+      "shortTitle": "First 30 Days & Letter",
+      "subtitle": "Work through this in order. Check each box as you go. Ask the attorney before acting on anything legal or financial.",
+      "sharing": "now",
+      "blocks": [
+        {
+          "type": "checklist",
+          "label": "First few days",
+          "items": [
+            {
+              "key": "lean_on_the_people_in_section_1_and",
+              "text": "Lean on the people in Section 1 and Section 12. Accept help."
+            },
+            {
+              "key": "contact_the_funeral_home_or_arrangem",
+              "text": "Contact the funeral home or arrangements contact. Ask them how many certified death certificates to order; many offices need originals."
+            },
+            {
+              "key": "call_the_attorney_section_1_and_find",
+              "text": "Call the attorney (Section 1) and find the will / trust (Section 8)."
+            },
+            {
+              "key": "call_the_cpa_and_bookkeeper_review_c",
+              "text": "Call the CPA and bookkeeper. Review cash and the next 30 days of payroll and bills."
+            },
+            {
+              "key": "call_the_insurance_agent_ask_about_l",
+              "text": "Call the insurance agent. Ask about life, key-person, health continuation, and anything with a claim deadline."
+            },
+            {
+              "key": "locate_the_sealed_emergency_envelope",
+              "text": "Locate the sealed emergency envelope (Section 13) and get into the password manager."
+            },
+            {
+              "key": "tell_key_employees_and_crew_leads_ca",
+              "text": "Tell key employees and crew leads calmly: jobs and paychecks will continue. Keep it short, and don't promise anything long-term."
+            }
+          ],
+          "key": "first_few_days"
+        },
+        {
+          "type": "checklist",
+          "label": "First two weeks",
+          "items": [
+            {
+              "key": "file_life_insurance_claims_ask_each",
+              "text": "File life insurance claims. Ask each carrier what they need."
+            },
+            {
+              "key": "notify_social_security_the_funeral_h",
+              "text": "Notify Social Security (the funeral home often does this) and any pension or annuity providers."
+            },
+            {
+              "key": "contact_the_mortgage_servicer_and_ot",
+              "text": "Contact the mortgage servicer and other lenders. Ask about next steps and don't skip payments."
+            },
+            {
+              "key": "visit_the_banks_with_death_certifica",
+              "text": "Visit the banks with death certificates. Ask what is frozen and what is available (Section 6)."
+            },
+            {
+              "key": "make_sure_autopay_is_working_for_ess",
+              "text": "Make sure autopay is working for essential bills: utilities, mortgage, insurance, payroll, taxes."
+            },
+            {
+              "key": "review_section_5_with_the_attorney_b",
+              "text": "Review Section 5 with the attorney before any decision on the business."
+            }
+          ],
+          "key": "first_two_weeks"
+        },
+        {
+          "type": "checklist",
+          "label": "First 30 days",
+          "items": [
+            {
+              "key": "notify_the_three_credit_bureaus_to_f",
+              "text": "Notify the three credit bureaus to flag the account and prevent identity theft."
+            },
+            {
+              "key": "update_titles_beneficiaries_and_acco",
+              "text": "Update titles, beneficiaries, and account ownership with the attorney's guidance."
+            },
+            {
+              "key": "handle_phones_email_and_subscription",
+              "text": "Handle phones, email, and subscriptions. Close or take over accounts after confirming nothing is needed (Section 13)."
+            },
+            {
+              "key": "tell_the_school_the_pediatrician_and",
+              "text": "Tell the school, the pediatrician, and the childcare providers what has changed."
+            },
+            {
+              "key": "schedule_time_with_the_cpa_to_cover",
+              "text": "Schedule time with the CPA to cover quarterly tax payments and payroll tax filings."
+            },
+            {
+              "key": "make_a_plan_for_the_business_with_th",
+              "text": "Make a plan for the business with the attorney and the person in Section 4: keep, sell, or wind down."
+            },
+            {
+              "key": "give_yourself_permission_to_rest_not",
+              "text": "Give yourself permission to rest. Nothing here has to be perfect."
+            }
+          ],
+          "key": "first_30_days"
+        },
+        {
+          "type": "pagebreak"
+        },
+        {
+          "type": "subsection",
+          "tag": "A LETTER",
+          "title": "Letter to My Spouse",
+          "subtitle": "Write this by hand. It may be the most important page in the book."
+        },
+        {
+          "type": "text",
+          "label": "What I want you to know about our finances and the business",
+          "helper": null,
+          "lines": 4,
+          "sharing": "on_unlock",
+          "key": "what_i_want_you_to_know_about_our_finances_and_t"
+        },
+        {
+          "type": "text",
+          "label": "What I'd want for the business (keep it, sell it, who to trust)",
+          "helper": null,
+          "lines": 4,
+          "sharing": "on_unlock",
+          "key": "what_i_d_want_for_the_business_keep_it_sell_it_w"
+        },
+        {
+          "type": "text",
+          "label": "What I'd want for our family and for the kids",
+          "helper": null,
+          "lines": 4,
+          "sharing": "on_unlock",
+          "key": "what_i_d_want_for_our_family_and_for_the_kids"
+        },
+        {
+          "type": "text",
+          "label": "What I'd want you to do for yourself",
+          "helper": null,
+          "lines": 3,
+          "sharing": "on_unlock",
+          "key": "what_i_d_want_you_to_do_for_yourself"
+        },
+        {
+          "type": "text",
+          "label": "Anything else",
+          "helper": null,
+          "lines": 4,
+          "sharing": "on_unlock",
+          "key": "anything_else"
+        }
+      ]
+    }
+  ]
+}

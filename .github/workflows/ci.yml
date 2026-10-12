@@ -15,5 +15,23 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm run check:spec
+      - run: npm test
       - run: npm run lint
       - run: npm run build
+
+  worksheet:
+    # Rebuild the PDF from the spec and keep it as a downloadable build artifact.
+    # (Staleness of the committed PDF is caught by check:spec in the build job.)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r scripts/requirements.txt
+      - run: python3 scripts/build_worksheet_from_spec.py spec/ledger-spec.json public/worksheet/spouse-ledger-worksheet.pdf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: spouse-ledger-worksheet
+          path: public/worksheet/spouse-ledger-worksheet.pdf
