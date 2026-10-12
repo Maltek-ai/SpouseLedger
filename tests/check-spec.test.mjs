@@ -18,7 +18,7 @@ test("the real spec passes", () => {
   assert.deepEqual(checkSpec(spec, lock, changelog), []);
 });
 
-test("v2.1.0 has 113 keyed fields across 15 sections", () => {
+test("the spec has 113 keyed fields across 15 sections", () => {
   assert.equal(spec.sections.length, 15);
   assert.equal(spec.sections.flatMap((s) => s.blocks.filter((b) => b.key)).length, 113);
 });
@@ -87,15 +87,15 @@ test("changing the spec without bumping specVersion fails", () => {
 
 test("bumping the version without a CHANGELOG entry fails", () => {
   const s = copy();
-  s.specVersion = "2.1.1";
-  assert.ok(checkSpec(s, lock, changelog).some((e) => e.includes('no "## 2.1.1" entry')));
+  s.specVersion = "99.0.0";
+  assert.ok(checkSpec(s, lock, changelog).some((e) => e.includes('no "## 99.0.0" entry')));
 });
 
 test("a label change with bump, changelog and re-lock passes", () => {
   const s = copy();
-  s.specVersion = "2.2.0";
+  s.specVersion = "99.0.0";
   block(s, "taxes", "property_taxes").label = "Property Tax";
-  const log = changelog + "\n## 2.2.0 (2026-10-13)\n- Sections: taxes\n";
+  const log = changelog + "\n## 99.0.0 (2099-01-01)\n- Sections: taxes\n";
   assert.deepEqual(checkSpec(s, updateLock(s, lock), log), []);
 });
 

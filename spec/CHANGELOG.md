@@ -16,3 +16,7 @@ Format:
 ## 2.1.0 (2026-10-12)
 - Sections: (baseline; all sections)
 - First version tracked in this repo. Matches the v2.1.0 printed worksheet.
+
+## 2.1.1 (2026-10-12)
+- Sections: household-money
+- Personal Bank Accounts: "In whose name?" column now reads "joint / mine / theirs" instead of "hers", so it doesn't assume the spouse's gender. Label change only; the field's key is unchanged.

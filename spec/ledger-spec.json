@@ -1,5 +1,5 @@
 {
-  "specVersion": "2.1.0",
+  "specVersion": "2.1.1",
   "legalReviewStatus": "DRAFT: not yet reviewed by an attorney. Do not sell or distribute until reviewed.",
   "keyPolicy": "Field keys are permanent. Edit labels and helper text freely; never rename or delete a key (deprecate instead).",
   "meta": {
@@ -783,7 +783,7 @@
               "key": "last_4"
             },
             {
-              "label": "In whose name? (joint / mine / hers)",
+              "label": "In whose name? (joint / mine / theirs)",
               "w": 1.8,
               "key": "in_whose_name_joint_mine_hers"
             },

@@ -75,8 +75,6 @@ drift apart. Never hardcode ledger text in a component.
 Publishing a GitHub release attaches the worksheet PDF for that spec version
 automatically (`.github/workflows/release.yml`).
 
-`docs/content-structure-v2.1.0.md` is a generated outline of spec v2.1.0, kept
-for reference only.
 
 ## Shortcuts taken for time
 
